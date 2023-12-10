@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akira Ibarreta Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#" class="btn">Hello!</a>
+        </nav>
+        <div class="content">
+            <h3>Hi, There!</h3>
+            <h1>I Am <span class="input"></span></h1>
+            <p> I am Akira Ibarreta, currently in my third year at Bulacan State University,</p>
+            <p> taking a degree in Bachelor of Science in Information Technology.</p>
+        </div>
+    </div>
+
+    <section id="about" class="about">
+        <div class="main">
+        <img src="image/about.png">
+        <div class="about-text">
+            <h2><span>About</span> Me</h2>
+            <h5>Student<span> & Future Developer</span></h5>
+            <p1>As a third-year student at Bulacan State University, my academic journey has been both challenging and rewarding. 
+                Embracing the dynamic learning environment, I have delved deeply into my field of study, cultivating a passion for knowledge and growth. 
+                Surrounded by a community of supportive peers and dedicated faculty, I have honed my skills, broadened my perspectives, and embraced diverse 
+                opportunities for personal and intellectual development. With each passing semester, I am committed to continuing this enriching expedition, 
+                aspiring to emerge not just as a graduate, but as a well-rounded individual prepared to make a positive impact in the world beyond academia. </p1>
+
+
+
+        </div>
+
+    </div>
+
+
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="skills">
+<div class="title">
+    <h2>My Skills</h2>
+
+</div>
+<div class="box">   
+    <div class="card">
+        <i class ="fas fa-user"></i>
+        <h5>Cummunication</h5>
+        <div class="pra"></div>
+        <p>I excel in communication, effortlessly connecting with diverse audiences through attentive listening and clear articulation. 
+            My skill fosters collaboration and understanding, creating a conducive environment for interaction and teamwork.
+
+        </p>
+        <p style="text-align: center;">
+            <a class="button" href="#"> Read More</a>
+        </p>
+    </div>
+</div>
+
+<div class="box">   
+    <div class="card">
+        <i class ="fas fa-computer"></i>
+        <h5>Web Development</h5>
+        <div class="pra"></div>
+        <p> As a novice in JavaScript and database technologies, I've been primarily engaged in grasping fundamental HTML and CSS concepts. 
+            Despite a lack of confidence in my skills, I consistently apply myself diligently to every project, both within and outside of academic settings.
+        </p>
+        <p style="text-align: center;">
+            <a class="button" href="#"> Read More</a>
+        </p>
+    </div>
+</div>
+
+
+<div class="box">   
+    <div class="card">
+        <i class ="fas fa-bell"></i>
+        <h5>Microsoft Office Skills</h5>
+        <div class="pra"></div>
+        <p>I possess comprehensive proficiency in various Microsoft software applications, including Word, Excel, PowerPoint, Outlook, and Teams,
+             enabling me to excel in document creation, data analysis, presentations, communication, and collaborative tasks.
+
+        </p>
+        <p style="text-align: center;">
+            <a class="button" href="#"> Read More</a>
+        </p>
+    </div>
+</div>
+</div>
+</div>
+    </section>
+
+    <section id="contact" class="contact-me">
+        <div id="contact" class="contact-me">
+    <p>Let's collaborate to achieve our goals.</p>
+    <a class="button-two" href="#"> Hire Me</a>
+</div>
+    </section>
+
+    <footer>
+       <p> Akira Ibarreta</p>
+<p> For More Informations about me</p>
+<div class="social">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+</div>
+<p>CopyRight by Akira Ibarreta </p>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed (".input", {
+            strings:["Akira Ibarreta.", "a Student", "a Basketball player.", "a Future Developer."],
+            typeSpeed: 70, 
+            backSpeed: 60,
+            loop:true
+        });
+    </script>
+</body>
+</html>
